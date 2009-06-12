@@ -9,11 +9,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090129223620) do
+ActiveRecord::Schema.define(:version => 20090611185251) do
 
   create_table "users", :force => true do |t|
     t.string   "ip"
-    t.string   "host"
+    t.string   "username"
     t.string   "secret"
     t.datetime "created_at"
     t.datetime "updated_at"

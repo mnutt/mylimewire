@@ -1,6 +1,6 @@
 <html>
-<title>my.limewire.com/<%=h @user.host -%></title>
+<title>my.limewire.com/<%=h @user.username -%></title>
 <body style="margin:0; padding:0;">
-  <IFRAME SRC="<%= @user.url -%>" NAME="main" style="width:100%; height: 100%; margin: 0; border: 0;"></IFRAME>
+  <IFRAME SRC="<%= @user.url -%>" NAME="main" style="width:100%; height: 100%; margin: 0; border: 0; position: absolute; top: 0; left: 0; bottom: 0; right: 0;"></IFRAME>
 </body>
 </html>

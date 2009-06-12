@@ -1,0 +1,17 @@
+<h1>My LimeWire</h1>
+
+<% form_tag('/foo', :id => 'user_form') do -%>
+Your username:
+<%= text_field_tag :username, '', :id => 'username' -%>
+<%= submit_tag "Go" -%>
+<% end -%>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#user_form').submit(function() {
+      var user = $('#username').val();
+      window.location = "/"+user;
+      return false;
+    });
+  });
+</script>
